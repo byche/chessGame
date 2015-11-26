@@ -24,11 +24,10 @@ public class ChessGame extends Observable implements ChessGames {
 		if(isMoveOk)
 		{
 			echiquier.move(xInit, yInit, xFinal, yFinal);
-			setChanged();
-			notifyObservers(echiquier.getPiecesIHM());
 			echiquier.switchJoueur();
 		}
 		
+		this.notifyObservers();
 		return isMoveOk;
 	}
 
