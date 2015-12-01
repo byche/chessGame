@@ -14,7 +14,9 @@ public class Server extends Communication{
 	try {
 		server = new ServerSocket(2009);
 		socket = server.accept();
+		System.out.println("connécté!");
 		//action
+		Thread thread = new Thread(new Emission());
 		server.close();
 		socket.close();
 		

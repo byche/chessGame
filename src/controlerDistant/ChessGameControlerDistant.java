@@ -22,7 +22,7 @@ public class ChessGameControlerDistant implements ChessGameControlers,Runnable{
 	public ChessGameControlerDistant(ChessGame chessgame,Communication communication)
 	{
 		this.chessGame = chessgame;
-		this.communication = communication;
+		
 		
 	}
 	

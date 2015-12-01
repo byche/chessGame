@@ -12,6 +12,7 @@ import javax.swing.*;
 
 import observable.ChessGame;
 import sockets.Client;
+import sockets.Communication;
 import sockets.Server;
 import vue.ChessGameCmdLine;
 import vue.ChessGameGUI;
@@ -27,8 +28,8 @@ public class DistantLauncherGUIServer {
 	public static void main(String[] args) {
 		  
 		  
-		  Server server = new Server();
-		 
+			Communication server = new Server();
+		
 		  ChessGame chessGame;
 		  ChessGameControlerDistant chessGameControlerDistant;
 			  
