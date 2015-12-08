@@ -7,7 +7,7 @@ import java.net.Socket;
 
 public class Client extends Communication{
 	
-
+	private int port;
 	
 	public Client(){
 		
@@ -22,6 +22,24 @@ public class Client extends Communication{
 			
 		}
 	}
+	
+public Client(int port){
+		
+		port = this.port;
+		
+		
+		try{
+			socket = new Socket(InetAddress.getLocalHost(),port);
+			System.out.println("demande de connexion");
+			socket.close();
+			
+		}
+		catch(IOException e)
+		{
+			
+		}
+	}
+
 
 
 }
